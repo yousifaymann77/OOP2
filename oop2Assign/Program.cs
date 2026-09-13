@@ -20,7 +20,11 @@
             #endregion
 
             #region part 1 Q2 b) Which class is the child class?
-             //ExpressShipment 
+            //ExpressShipment 
+            #endregion
+
+            #region part 1 Q2 c) What members are inherited by ExpressShipment?
+            // The Tracking Code property
             #endregion
         }
     }
