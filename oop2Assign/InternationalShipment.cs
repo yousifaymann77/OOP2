@@ -26,10 +26,6 @@ namespace oop2Assign
                 {
                     destinationCountry = value;
                 }
-                else
-                {
-                    destinationCountry = default!;
-                }
             }
         }
         public decimal CustomFee
@@ -40,10 +36,6 @@ namespace oop2Assign
                 if (customFee >= 0)
                 {
                     customFee = value;
-                }
-                else
-                {
-                    customFee = default;
                 }
             }
         }
