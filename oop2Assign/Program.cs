@@ -16,7 +16,11 @@
             #endregion
 
             #region part 1 Q2 a) Which class is the parent class?
-              // Shipment
+            // Shipment
+            #endregion
+
+            #region part 1 Q2 b) Which class is the child class?
+             //ExpressShipment 
             #endregion
         }
     }
