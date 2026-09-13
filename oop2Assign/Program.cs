@@ -384,9 +384,17 @@ namespace oop2Assign
             else
             {
                 Console.WriteLine("Shipment Not Found.");
-            } 
+            }
             #endregion
 
+            #region Part 2 Q5 11 - Print the remaining Shipments
+            Console.WriteLine("\n\n");
+            Console.WriteLine("======================================");
+            Console.WriteLine("Remaining Shipments");
+            Console.WriteLine("======================================");
+
+            deliveryCenter.PrintAllShipments(); 
+            #endregion
         }
 
      
