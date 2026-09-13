@@ -366,11 +366,26 @@ namespace oop2Assign
             else
             {
                 Console.WriteLine("Shipment Not Found.");
-            } 
+            }
             #endregion
 
+            #region Part 2 Q5 10 - Remove a Shipment If found
+            Console.WriteLine("\n\n");
+            Console.Write("Enter Tracking Code to Remove: ");
 
+            string removeCode = Console.ReadLine()!;
 
+            bool removed = deliveryCenter.RemoveShipment(removeCode);
+
+            if (removed)
+            {
+                Console.WriteLine("Shipment Removed Successfully.");
+            }
+            else
+            {
+                Console.WriteLine("Shipment Not Found.");
+            } 
+            #endregion
 
         }
 
