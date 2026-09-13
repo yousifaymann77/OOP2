@@ -80,7 +80,7 @@ namespace oop2Assign
             return false;
         }
 
-        public void PrintAllShipmints()
+        public void PrintAllShipments()
         {
             for (int i = 0; i < shipments.Length; i++)
             {

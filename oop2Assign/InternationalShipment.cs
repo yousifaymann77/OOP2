@@ -10,8 +10,8 @@ namespace oop2Assign
         private string destinationCountry = default!;
         private decimal customFee;
 
-        public InternationalShipment(string trackingCode, string description, decimal deliveryFee, decimal weight, string destinantion, string destinationCountry, decimal customFee)
-            : base(trackingCode, description, deliveryFee, weight, destinantion)
+        public InternationalShipment(string trackingCode, string description, decimal deliveryFee, decimal weight, string destinationCountry, decimal customFee, string destination)
+            : base(trackingCode, description, deliveryFee, weight,destination)
         {
             this.customFee = customFee;
             this.destinationCountry = destinationCountry;
