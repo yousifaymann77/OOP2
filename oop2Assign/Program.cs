@@ -346,7 +346,27 @@ namespace oop2Assign
             #region part 2 Q5 8-print all Shipments
             Console.WriteLine("\n\n");
             Console.WriteLine("---Printing All Shipments---");
-            deliveryCenter.PrintAllShipments(); 
+            deliveryCenter.PrintAllShipments();
+            #endregion
+
+            #region part2 Q5 9 - Search for a shipment
+            Console.WriteLine("\n\n");
+            Console.Write("Enter Tracking Code to Search: ");
+
+            string searchCode = Console.ReadLine()!;
+
+            Shipment foundShipment = deliveryCenter[searchCode];
+
+            if (foundShipment != null)
+            {
+                Console.WriteLine("Shipment Found Successfully.");
+                Console.WriteLine($"Tracking Code: {foundShipment.TrackingCode}");
+                Console.WriteLine($"Description: {foundShipment.Description}");
+            }
+            else
+            {
+                Console.WriteLine("Shipment Not Found.");
+            } 
             #endregion
 
 
