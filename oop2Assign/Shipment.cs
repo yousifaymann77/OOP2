@@ -8,8 +8,8 @@ namespace oop2Assign
     {
         private string trackingCode;
         private string description;
-        private double weight;
-        private double deliveryFee;
+        private decimal weight;
+        private decimal deliveryFee;
 
         public string Destination { get; set; }
 
@@ -24,7 +24,7 @@ namespace oop2Assign
 
         }
 
-        public Shipment(string trackingCode, string description, double weight, double deliveryFee, string destination)
+        public Shipment(string trackingCode, string description, decimal weight, decimal deliveryFee, string destination)
         {
             this.TrackingCode = trackingCode;
             this.Description = description;
@@ -62,7 +62,7 @@ namespace oop2Assign
             }
         }
 
-        public double Weight
+        public decimal Weight
         {
             get
             {
@@ -77,7 +77,7 @@ namespace oop2Assign
                 }
             }
         }
-        public double DeliveryFee
+        public decimal DeliveryFee
         {
             get
             {
@@ -91,7 +91,7 @@ namespace oop2Assign
                 }
             }
         }
-        public double EstimatedCost
+        public decimal EstimatedCost
         {
             get
             {
@@ -103,7 +103,7 @@ namespace oop2Assign
         {
             if (newFee > 0)
             {
-                deliveryFee = (double)newFee;
+                deliveryFee = newFee;
             }
         }
 
