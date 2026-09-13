@@ -91,7 +91,7 @@ namespace oop2Assign
                 }
             }
         }
-        public decimal EstimatedCost
+        public virtual decimal EstimatedCost
         {
             get
             {
