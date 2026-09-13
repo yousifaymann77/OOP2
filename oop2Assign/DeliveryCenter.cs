@@ -8,7 +8,7 @@ namespace oop2Assign
     {
         private Shipment[] shipments;
 
-        private string CenterName { get; set; }
+        public string CenterName { get; set; }
 
         public DeliveryCenter()
         {

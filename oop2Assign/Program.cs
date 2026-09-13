@@ -28,9 +28,17 @@
             #endregion
 
             #region  part 1 Q2 d) Why is inheritance better than duplicating the same code in multiple classes?
-             // Because it acheives the Principles of reusability and Maintainability of the code , especially in large complicated projects
+            // Because it acheives the Principles of reusability and Maintainability of the code , especially in large complicated projects
             #endregion
 
+
+
+            #region Part 2 Q5 1&2
+            DeliveryCenter deliveryCenter = new DeliveryCenter();
+
+            Console.WriteLine("Enter Delivery Center Name : ");
+            deliveryCenter.CenterName = Console.ReadLine(); 
+            #endregion
 
         }
     }
