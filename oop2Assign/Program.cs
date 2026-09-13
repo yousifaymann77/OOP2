@@ -26,6 +26,10 @@
             #region part 1 Q2 c) What members are inherited by ExpressShipment?
             // The Tracking Code property
             #endregion
+
+            #region  part 1 Q2 d) Why is inheritance better than duplicating the same code in multiple classes?
+             // Because it acheives the Principles of reusability and Maintainability of the code , especially in large complicated projects
+            #endregion
         }
     }
 }
