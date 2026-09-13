@@ -1,4 +1,6 @@
-﻿namespace oop2Assign
+﻿using System.Runtime.InteropServices;
+
+namespace oop2Assign
 {
     internal class Program
     {
@@ -339,9 +341,13 @@
                     destination
                 );
 
-            deliveryCenter.AddShipment(internationalShipment); 
+            deliveryCenter.AddShipment(internationalShipment);
             #endregion
-
+            #region part 2 Q5 8-print all Shipments
+            Console.WriteLine("\n\n");
+            Console.WriteLine("---Printing All Shipments---");
+            deliveryCenter.PrintAllShipments(); 
+            #endregion
 
 
 

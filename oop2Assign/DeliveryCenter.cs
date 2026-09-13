@@ -50,7 +50,7 @@ namespace oop2Assign
             
             for(int i = 0; i < shipments.Length; i++)
             {
-                if (shipments[i].TrackingCode == null)
+                if (shipments[i] == null)
                 {
                     shipments[i] = shipment;
                     return true;
@@ -84,13 +84,54 @@ namespace oop2Assign
         {
             for (int i = 0; i < shipments.Length; i++)
             {
-                if (shipments[i].TrackingCode != null)
+                if (shipments[i] != null)
                 {
-                    Console.WriteLine($"------Shipment {i + 1} Info----------");
-                    Console.WriteLine($"Tracking Code: {shipments[i].TrackingCode} \n-Description: {shipments[i].Description} \n-Weight: {shipments[i].Weight} kg \n-Delivery Fee: ${shipments[i].DeliveryFee} \n-Destination: {shipments[i].Destination}");
+                    Console.WriteLine("----------------------------------------");
+
+                    if (shipments[i] is StandardShipment standard)
+                    {
+                        Console.WriteLine("Standard Shipment");
+                        Console.WriteLine();
+
+                        Console.WriteLine($"Tracking Code : {standard.TrackingCode}");
+                        Console.WriteLine($"Description   : {standard.Description}");
+                        Console.WriteLine($"Weight        : {standard.Weight} KG");
+                        Console.WriteLine($"Delivery Fee  : {standard.DeliveryFee} EGP");
+                        Console.WriteLine($"Destination   : {standard.Destination}");
+                        Console.WriteLine($"Estimated Cost: {standard.EstimatedCost}");
+                    }
+
+                    else if (shipments[i] is ExpressShipment express)
+                    {
+                        Console.WriteLine("Express Shipment");
+                        Console.WriteLine();
+
+                        Console.WriteLine($"Tracking Code : {express.TrackingCode}");
+                        Console.WriteLine($"Description   : {express.Description}");
+                        Console.WriteLine($"Weight        : {express.Weight} KG");
+                        Console.WriteLine($"Delivery Fee  : {express.DeliveryFee} EGP");
+                        Console.WriteLine($"Extra Fee     : {express.ExtraFee} EGP");
+                        Console.WriteLine($"Estimated Cost: {express.EstimatedCost}");
+                    }
+
+                    else if (shipments[i] is InternationalShipment international)
+                    {
+                        Console.WriteLine("International Shipment");
+                        Console.WriteLine();
+
+                        Console.WriteLine($"Tracking Code      : {international.TrackingCode}");
+                        Console.WriteLine($"Description        : {international.Description}");
+                        Console.WriteLine($"Weight             : {international.Weight} KG");
+                        Console.WriteLine($"Delivery Fee       : {international.DeliveryFee} EGP");
+                        Console.WriteLine($"Destination Country: {international.DestinationCountry}");
+                        Console.WriteLine($"Customs Fee        : {international.CustomFee} EGP");
+                        Console.WriteLine($"Estimated Cost     : {international.EstimatedCost}");
+                    }
+
+                    Console.WriteLine("----------------------------------------");
                 }
             }
-        } 
+        }
         #endregion
     }
 }
