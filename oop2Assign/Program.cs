@@ -10,9 +10,13 @@
             #endregion
 
             #region part 1 Q1 b) Why are classes more suitable than structs for large applications?
-             // Because class support inheritence which helps in reusability and organization of code in large projects
-             // classes are refrence type so objects can be shared between diffrent parts of the App without copying the entire projects
-             // Better for complex projects and reusable oop designs
+            // Because class support inheritence which helps in reusability and organization of code in large projects
+            // classes are refrence type so objects can be shared between diffrent parts of the App without copying the entire projects
+            // Better for complex projects and reusable oop designs
+            #endregion
+
+            #region part 1 Q2 a) Which class is the parent class?
+              // Shipment
             #endregion
         }
     }
